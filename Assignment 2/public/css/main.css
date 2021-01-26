@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.home_message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.home_message div{
+    text-align: center;
+}
+.home_message div img{
+    width: 200px;
+}
+.home_message div div{
+    margin: 10px;
+}
+.home_message div h1{
+    text-transform: capitalize;
+    color: #303030;
+}
+.home_message div h1 span{
+    color: #57964F;
+    font-weight: bold;
+}
+.home_message div ul{
+    list-style: none;
+}
+.home_message div ul li{
+    display: inline;
+    padding: 0 30px;
+}
+.home_message div ul li a, a{
+    color: green;
+    font-size: 14px;
+    text-decoration: none;
+}
+a:hover,
+a:active,
+.home_message div ul li a:hover,
+.home_message div ul li a:active{
+    text-decoration: underline;
+}
+.posts{
+    padding: 50px ;
+}
+.post-container{
+    margin: 10px auto;
+    width: 80%;
+    background-color: #57964F;
+    padding: 30px;
+    border-radius: 5px;
+    color: #fff;
+}
+.post-container .title{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.post-container .body{
+    font-size: 14px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.post-container .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post-container .footer div{
+    font-size: 10px;
+    font-style: italic;
+}
+button:focus,
+textarea:focus,
+input:focus{
+    outline: none;
+}
+button{
+    background-color: #fff;
+    color: #303030;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+}
+button:active,
+button:hover{
+    background-color: rgb(235, 252, 244)
+}
+.new-post{
+    padding: 50px;
+}
+.new-post div{
+    margin: auto;
+    background-color: #57964F;
+    width: 80%;
+    border-radius: 5px;
+    padding: 20px;
+    color: #fff;
+}
+.new-post div h1{
+    margin: 0;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #fff;
+}
+.new-post div div label,
+.new-post div div input,
+.new-post div div textarea{
+    display: block;
+    width: 100%;
+}
+.new-post div div input,
+.new-post div div textarea{
+    padding: 10px;
+    margin-top: 2px;
+    border-radius: 5px;
+    border: none;
+}
+.new-post div div textarea{
+    height: 70px;
+}
