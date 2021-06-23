@@ -4,17 +4,17 @@
     <body>
         <%- include('../includes/navigation.ejs') %>
         <main>
-            <% if (products.length > 0) { %> 
+            <% if (products.length > 0) { %>
                 <ul>
-                    <% products.forEach(p => { %> 
+                    <% products.forEach(p => { %>
                         <li>
-                            <p><%= p.title  %> (<%= p.cartItem.quantity %> )</p>
+                            <p><%= p.productId.title  %> (<%= p.quantity %> )</p>
                             <form action="/cart-delete-item" method="POST">
-                                <input type="hidden" name="productId" value="<%= p.id %>">
+                                <input type="hidden" name="productId" value="<%= p.productId._id %>">
                                 <button class="btn" type="submit">Delete</button>
                             </form>
                         </li>
-                    <% }); %> 
+                    <% }); %>
                 </ul>
                 <br>
                 <hr>
@@ -23,8 +23,8 @@
                         <button type="submit" class="btn">Order Now!</button>
                     </form>
                 </div>
-            <% } else { %> 
+            <% } else { %>
                 <h1>No product(s) in cart</h1>
-            <% } %> 
+            <% } %>
         </main>
         <%- include('../includes/end.ejs') %>
